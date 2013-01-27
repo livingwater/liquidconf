@@ -1,0 +1,23 @@
+<footer role="global">
+  <div class="container">
+    <nav class="discover">
+      {% nav site, depth: 2, exclude: '^(?!.*discover).*$', id: "" %}
+    </nav>
+
+    <nav class="about">
+      {% nav site, depth: 2, exclude: '^(?!.*about).*$', id: "" %}
+    </nav>
+
+    <nav class="company">
+      {% nav site, depth: 2, exclude: '^(?!.*company).*$', id: "" %}
+    </nav>
+
+    <nav class="find_us">
+      {% nav site, depth: 2, exclude: '^(?!.*find).*$', id: "" %}
+    </nav>
+
+    <div class="copyright">
+      &copy; {{ now | format_date: "%Y" }} Goodberry
+    </div>
+  </div>
+</footer>

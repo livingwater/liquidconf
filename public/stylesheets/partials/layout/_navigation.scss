@@ -1,0 +1,27 @@
+nav.categories {
+  margin-bottom: 2em;
+  ul {
+    margin: 0;
+    padding: 0 1em;
+    @extend #clearfix;
+
+    li {
+      @include float-left;
+
+      a {
+        display: block;
+        padding: 0 1em;
+        font-size: 18px;
+        border-right: 1px solid #ccc
+      }
+
+      &.all {
+        a {
+          line-height: 28px;
+          font-size: 12px;
+          border-right: 0;
+        }
+      }
+    }
+  }
+}

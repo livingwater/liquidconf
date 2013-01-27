@@ -1,0 +1,31 @@
+{% extends 'inner' %}
+
+{% block aside_global %}
+  <aside role="global">
+    <nav class="tertiary">
+      <header>
+        <h1>more</h1>
+      </header>
+      {% nav parent, id: '' %}
+    </nav>
+  </aside>
+{% endblock %}
+
+{% block section_global %}
+  <div class="full-article">
+
+    <h3>{{ article.title }}</h3>
+
+    <small><a href='/articles'>Back to the articles</a></small>
+
+    <p class="date">
+      {{ article.posted_at | localized_date: '%A %d %B %Y', 'en' }}
+    </p>
+
+    <p class="body">
+      {{ article.body }}
+    </p>
+
+    {% include 'disqus' %}
+  </div>
+{% endblock %}

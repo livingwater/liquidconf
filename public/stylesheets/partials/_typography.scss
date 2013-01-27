@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Enriqueta:400,700|Open+Sans:100,200,300,400,500,600,700,800,900);
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $base-font-size;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $color-default;
+}
+
+a,
+a:link,
+a:visited {
+  color: $color-default;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lighten($color-default, 25);
+  text-decoration: underline;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+}
+
+small {
+  font-size: pem(11px);
+}

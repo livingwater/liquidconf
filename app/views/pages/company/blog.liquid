@@ -1,0 +1,22 @@
+{% extends 'inner' %}
+
+{% block section_global %}
+  <section role="global">
+    <header>
+      <h1>Blog</h1>
+    </header>
+
+    {% paginate models.articles by 5 %}
+
+      <section class="articles">
+        {% for article in paginate.collection %}
+          {% include 'article_summary' with article %}
+        {% endfor %}
+      </section>
+
+      {{ paginate | default_pagination }}
+
+    {% endpaginate %}
+  </section>
+
+{% endblock %}

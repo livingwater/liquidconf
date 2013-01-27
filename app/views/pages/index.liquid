@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  {% include 'head' %}
+  {% inline_editor %}
+</head>
+
+<body id="{{ page.slug | dasherize }}-page" class="{% block page_class %}{% endblock %}">
+  {% include 'ie7' %}
+  {% include 'header' %}
+
+  {% block page_header %}
+    <div class="container">
+      <nav class="categories">
+        <ul>
+          <li class="bible_studies"><a href="#">Bible Studies</a></li>
+          <li class="choral_music"><a href="#">Chorale Music</a></li>
+          <li class="leadership_resources"><a href="#">Leadership Resources</a></li>
+          <li class="videos"><a href="#">Videos</a></li>
+          <li class="audio"><a href="#">Audio</a></li>
+          <li class="all"><a href="#">Browse All Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+  {% endblock %}
+
+  <div id="content">
+    <div class="container">
+
+      {% block hero %}
+        <div class="hero">
+          <header>
+            {% editable_short_text "title", hint: "Hero Statement", priority: 10 %}
+              <h1>1000's of resources,<br /> delivered to your door.</h1>
+            {% endeditable_short_text %}
+          </header>
+
+          <a href="#" class="call_to_action">Try Goodberry for free</a>
+
+          <section>
+            <article>
+              {% editable_long_text "tagline", hint: "The tagline below the big title", priority: 1 %}
+              <h2>Save Money.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              {% endeditable_long_text %}
+            </article>
+
+            <article>
+              <h2>Find the right one.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </article>
+
+            <article>
+              <h2>Try and try again.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </article>
+          </section>
+        </div>
+      {% endblock %}
+
+      {% block section_global %}
+        <section class="popular">
+          <header>
+            <h1>Popular right now</h1>
+          </header>
+
+          <div class="content">
+            <article>
+              <img src="//placehold.it/80x90" />
+              <h2>Lorem ipsum dolor</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </article>
+
+            <article>
+              <img src="//placehold.it/80x90" />
+              <h2>Lorem ipsum dolor</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </article>
+
+            <article>
+              <img src="//placehold.it/80x90" />
+              <h2>Lorem ipsum dolor</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </article>
+
+            <article>
+              <img src="//placehold.it/80x90" />
+              <h2>Lorem ipsum dolor</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </article>
+          </div>
+        </section>
+      {% endblock %}
+
+      {% block aside_global %}
+        <aside role="global">
+          <article class="blog">
+            <a href="/blog">Our Blog</a>
+          </article>
+          <article class="newsletter">
+            <header>
+              <h1>Sign up for our newsletter</h1>
+              <p>Reviews, new additions, and what’s coming soon: delivered to your inbox</p>
+            </header>
+            <div class="content">
+            </div>
+          </article>
+        </aside>
+      {% endblock %}
+
+    </div> <!-- /.container -->
+  </div> <!-- /#content -->
+
+  {% include 'footer' %}
+  {% include 'foot' %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+- ! 'Item #1':
+    _permalink: item-1
+    :description: Et aspernatur reiciendis aperiam minima vel. Iure rerum accusamus
+      ex temporibus dignissimos unde voluptate. Ut laudantium perferendis aut laboriosam
+      distinctio. Quia facilis sequi unde sint. Unde similique qui fugiat hic optio.
+- ! 'Item #2':
+    _permalink: item-2
+    :description: Rerum quas totam odit ea fugit et excepturi. Quae voluptatem perspiciatis
+      optio. Blanditiis optio facere fugiat qui in sunt laborum. Eum maiores possimus
+      optio nisi velit nostrum.
+- ! 'Item #3':
+    _permalink: item-3
+    :description: Maiores alias consequuntur placeat natus et incidunt amet. Alias
+      enim exercitationem dolores dicta. Non quibusdam excepturi sequi tempore harum.
+      Esse similique cumque quod autem sequi est.
+- ! 'Item #4':
+    _permalink: item-4
+    :description: Est commodi aperiam velit voluptas id optio quia autem. Itaque rerum
+      tenetur et. Molestiae et commodi sequi totam. Et optio enim et libero et est
+      dolorem.

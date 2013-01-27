@@ -1,0 +1,118 @@
+site:
+  name: Goodberry
+
+  locales: [en]
+
+  seo_title: "Bible Study &amp; Media Library for Churches : Goodberry.net"
+  meta_keywords: "Bible Study & Media Library for Churches : Goodberry.net"
+  meta_description: "Goodberry is a bible study, media (DVD, VHS, Audio, Kit) lending library for churches."
+
+  pages:
+    - index: # page path (the template can edited here app/views/pages/index.liquid)
+        title: Home page
+        published: true
+
+    - landing:
+        published: true
+        listed: false
+    - inner:
+        published: true
+        listed: false
+    - 404:
+        title: Page not found
+
+    - discover:
+        published: true
+        title: Discover
+        redirect_url: http://catalog.goodberry.net
+        listed: true
+    - discover/browse:
+        published: true
+        title: Browse
+        redirect_url: http://catalog.goodberry.net/search
+        listed: true
+    - discover/bible-studies:
+        published: true
+        title: Bible Studies
+        redirect_url: http://catalog.goodberry.net/search/bible%20sstudies
+        listed: true
+    - discover/choral-music:
+        published: true
+        title: Choral Music
+        redirect_url: http://catalog.goodberry.net/search/choral%20smusic
+        listed: true
+    - discover/leadership-resources:
+        published: true
+        title: Leadership Resources
+        redirect_url: http://catalog.goodberry.net/search/leadership%20sresources
+        listed: true
+    - discover/videos:
+        published: true
+        title: Videos
+        redirect_url: http://catalog.goodberry.net/search/videos
+        listed: true
+    - discover/audio:
+        published: true
+        title: Audio
+        redirect_url: http://catalog.goodberry.net/search/audio
+        listed: true
+
+    - about:
+        published: true
+        title: About Goodberry
+        listed: true
+    - about/start-your-free-trial:
+        published: true
+        title: Start Your Free Trial
+        listed: true
+    - about/faq:
+        published: true
+        title: FAQ / How it works
+        listed: true
+    - about/terms-of-use:
+        published: true
+        title: Terms of Use
+        listed: true
+    - about/privacy-policy:
+        published: true
+        title: Privacy Policy
+        listed: true
+    - about/general-policies:
+        published: true
+        title: General Policies
+        listed: true
+
+    - company:
+        published: true
+        title: Company
+        listed: true
+    - company/blog:
+        published: true
+        title: Blog
+        listed: true
+    - company/blog/content_type_template:
+        templatized: true
+        published: true
+        title: Template of an article
+        model: articles
+    - articles/rss:
+        published: true
+        title: rss feed
+        listed: false
+        format: rss
+    - company/team:
+        published: true
+        title: Team
+        listed: true
+    - company/jobs:
+        published: true
+        title: Jobs
+        listed: true
+    - company/customer-support:
+        published: true
+        title: Customer Support
+        listed: true
+    - company/feedback:
+        published: true
+        title: Give Us Feedback
+        listed: true
