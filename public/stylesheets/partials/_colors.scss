@@ -1,4 +1,12 @@
-$color-default: #323232;
+$color-default: rgb(102, 102, 102);
 $color-accent-1: rgb(121,57,178);
 
-$color-white: #fff;
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+
+$color-mono-dark: rgb(30, 30, 30);
+$color-mono-medium: rgb(107, 106, 101);
+$color-mono-light: rgb(238, 238, 238);
+
+$color-link: $color-default;
+$color-link-highlight: rgb(0, 178, 0);

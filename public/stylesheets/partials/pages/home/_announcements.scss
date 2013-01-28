@@ -1,0 +1,111 @@
+body#index-page {
+  .announcements {
+    padding-top: 3em;
+    padding-bottom: 2em;
+    @extend #clearfix;
+
+    .events {
+      @include span-columns(7 alpha, 16);
+      @include post(1, 16);
+
+      header {
+        h1 {
+          color: $color-accent-1;
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+
+      .times {
+        margin-bottom: 2em;
+      }
+    }
+
+    .event {
+      clear: both;
+
+      h2 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      p {
+        margin-top: 0;
+        font-size: 12px;
+      }
+    }
+
+    .upcoming {
+      .event {
+        position: relative;
+        padding-left: 42px;
+
+        .date {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 32px;
+          padding-bottom: 5px;
+          border: 1px solid #ccc;
+          background-color: #fff;
+          line-height: 1;
+          text-align: center;
+
+          .month {
+            text-transform: uppercase;
+            color: $color-mono-medium;
+            font-size: 10px;
+            font-weight: 100;
+          }
+
+          .day {
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .locations {
+      @include span-columns(8 omega, 16);
+
+      .map {
+        margin-top: 1em;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        @include single-box-shadow(rgba(200,200,200,.5),0,0,5px,1px);
+
+        header {
+          padding: 0.5em 1em;
+          border-bottom: 1px solid #ccc;
+          @extend #clearfix;
+
+          h1 {
+            @include span-columns(1.5 alpha, 8);
+            line-height: 1;
+            margin: 0;
+            padding: 0.5em 0;
+            font-size: 14px;
+          }
+
+          p {
+            @include span-columns(6.5 omega, 8);
+            margin: 0;
+            padding: 0.25em 0;
+            font-size: 12px;
+          }
+        }
+
+        .content {
+          height: 228px;
+          padding: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

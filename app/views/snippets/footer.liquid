@@ -1,23 +1,22 @@
 <footer role="global">
   <div class="container">
-    <nav class="discover">
-      {% nav site, depth: 2, exclude: '^(?!.*discover).*$', id: "" %}
-    </nav>
+    <hr />
 
-    <nav class="about">
-      {% nav site, depth: 2, exclude: '^(?!.*about).*$', id: "" %}
-    </nav>
-
-    <nav class="company">
-      {% nav site, depth: 2, exclude: '^(?!.*company).*$', id: "" %}
-    </nav>
-
-    <nav class="find_us">
-      {% nav site, depth: 2, exclude: '^(?!.*find).*$', id: "" %}
-    </nav>
-
-    <div class="copyright">
-      &copy; {{ now | format_date: "%Y" }} Goodberry
+    <div class="vcard">
+      <div class="adr">
+        <span class="tel">
+          <abbr title="Telephone">Phone:</abbr>
+          <span class="value">(616) 425-9554</span>
+        </span>
+        <span class="email">
+          <abbr title="Email">Email:</abbr>
+          <a href="mailto:hello@livingwatercrc.org" class="value">hello@livingwatercrc.org</a>
+        </span>
+      </div> <!-- /.addr -->
+      <div class="copyright">
+        &copy; {{ now | format_date: "%Y" }} <a class="fn org url" href="http://livingwatercrc.org" title="Contact Information for Living Water CRC"><span class="organization-name">Living Water Christian Reformed Church</span></a>
+      </div>
     </div>
+
   </div>
 </footer>

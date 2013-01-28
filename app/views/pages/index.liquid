@@ -12,108 +12,39 @@
   {% include 'ie7' %}
   {% include 'header' %}
 
-  {% block page_header %}
+  <div class="hero">
     <div class="container">
-      <nav class="categories">
-        <ul>
-          <li class="bible_studies"><a href="#">Bible Studies</a></li>
-          <li class="choral_music"><a href="#">Chorale Music</a></li>
-          <li class="leadership_resources"><a href="#">Leadership Resources</a></li>
-          <li class="videos"><a href="#">Videos</a></li>
-          <li class="audio"><a href="#">Audio</a></li>
-          <li class="all"><a href="#">Browse All Categories</a></li>
-        </ul>
-      </nav>
+      {% block hero %}
+        <h1><span>&mdash;</span> Real Life Church <span>&mdash;</span></h1>
+        <h2>Learn more about our community</h2>
+      {% endblock %}
     </div>
-  {% endblock %}
+  </div>
 
   <div id="content">
     <div class="container">
+      <section role="global">
+        {% block section_global %}
+          <p class="introduction">We’re a small, close-knit community of believers. We’re drawn together by a common love for Christ, our pursuit to live like Him, and a desire to support and challenge one-another in our faith journey.<p>
 
-      {% block hero %}
-        <div class="hero">
-          <header>
-            {% editable_short_text "title", hint: "Hero Statement", priority: 10 %}
-              <h1>1000's of resources,<br /> delivered to your door.</h1>
-            {% endeditable_short_text %}
-          </header>
+          <h3>We love you.</h3>
 
-          <a href="#" class="call_to_action">Try Goodberry for free</a>
-
-          <section>
-            <article>
-              {% editable_long_text "tagline", hint: "The tagline below the big title", priority: 1 %}
-              <h2>Save Money.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-              {% endeditable_long_text %}
-            </article>
-
-            <article>
-              <h2>Find the right one.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            </article>
-
-            <article>
-              <h2>Try and try again.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            </article>
-          </section>
-        </div>
-      {% endblock %}
-
-      {% block section_global %}
-        <section class="popular">
-          <header>
-            <h1>Popular right now</h1>
-          </header>
-
-          <div class="content">
-            <article>
-              <img src="//placehold.it/80x90" />
-              <h2>Lorem ipsum dolor</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            </article>
-
-            <article>
-              <img src="//placehold.it/80x90" />
-              <h2>Lorem ipsum dolor</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            </article>
-
-            <article>
-              <img src="//placehold.it/80x90" />
-              <h2>Lorem ipsum dolor</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            </article>
-
-            <article>
-              <img src="//placehold.it/80x90" />
-              <h2>Lorem ipsum dolor</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            </article>
-          </div>
-        </section>
-      {% endblock %}
+          <p class="welcome">We love loving people – and it shows.You should come by and find out what’s happening at Living Water. Maybe you’ll love us too!</p>
+        {% endblock %}
+      </section>
 
       {% block aside_global %}
         <aside role="global">
-          <article class="blog">
-            <a href="/blog">Our Blog</a>
-          </article>
-          <article class="newsletter">
-            <header>
-              <h1>Sign up for our newsletter</h1>
-              <p>Reviews, new additions, and what’s coming soon: delivered to your inbox</p>
-            </header>
-            <div class="content">
-            </div>
-          </article>
+          <iframe src="http://www.youtube.com/embed/DmvlwrdK7qw" frameborder="0" allowfullscreen></iframe>
+          <h4>Watch:</h4>
+          <p>Welcome to Living Water CRC (2:23)</p>
         </aside>
       {% endblock %}
 
     </div> <!-- /.container -->
   </div> <!-- /#content -->
 
+  {% include 'announcements' %}
   {% include 'footer' %}
   {% include 'foot' %}
 </body>

@@ -1,25 +1,31 @@
-nav.categories {
-  margin-bottom: 2em;
-  ul {
-    margin: 0;
-    padding: 0 1em;
-    @extend #clearfix;
+header[role="global"] {
+  nav {
+    @include float-right;
 
-    li {
-      @include float-left;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      @extend #clearfix;
 
-      a {
-        display: block;
-        padding: 0 1em;
-        font-size: 18px;
-        border-right: 1px solid #ccc
-      }
+      li {
+        @include float-left;
+        margin-right: 1.5em;
+        padding: 0;
 
-      &.all {
         a {
-          line-height: 28px;
-          font-size: 12px;
-          border-right: 0;
+          display: block;
+          color: $color-link;
+          font-size: pem(12px);
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1px
+        }
+
+        &.active {
+          a {
+            color: $color-link-highlight;
+          }
         }
       }
     }

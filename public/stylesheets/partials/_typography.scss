@@ -13,6 +13,7 @@ a:link,
 a:visited {
   color: $color-default;
   text-decoration: none;
+  @include transition-duration(".2s, .2s");
 }
 
 a:hover {
@@ -30,6 +31,7 @@ h3 {
 }
 
 h4 {
+  // font-family: Enriqueta, Serif;
 }
 
 p {
