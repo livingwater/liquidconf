@@ -1,7 +1,6 @@
 {% extends 'inner' %}
 
 {% block section_global %}
-  <section role="global">
     <header>
       <h1>Blog</h1>
     </header>
@@ -17,6 +16,4 @@
       {{ paginate | default_pagination }}
 
     {% endpaginate %}
-  </section>
-
 {% endblock %}

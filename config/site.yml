@@ -11,6 +11,7 @@ site:
     - index: # page path (the template can edited here app/views/pages/index.liquid)
         title: Home page
         published: true
+        listed: true
 
     - landing:
         published: true
@@ -22,9 +23,15 @@ site:
     - 404:
         title: Page not found
 
+    - home:
+        published: true
+        title: Home
+        listed: true
+        redirect_url: /
+
     - about:
         published: true
-        title: About Goodberry
+        title: About
         listed: true
 
     - blog:

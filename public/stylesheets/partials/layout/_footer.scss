@@ -2,14 +2,9 @@ footer[role="global"] {
   clear: both;
   padding-bottom: 3em;
 
-  hr {
-    width: 100%;
-    margin: 0 0 1em;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #fff;
-  }
-
   .vcard {
+    margin-bottom: .5em;
+
     .adr {
       font-size: 14px;
 
@@ -21,9 +16,9 @@ footer[role="global"] {
         font-weight: 600;
       }
     }
+  }
 
-    .copyright {
-      font-size: 11px;
-    }
+ .copyright {
+    font-size: 11px;
   }
 }

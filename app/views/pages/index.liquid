@@ -12,14 +12,14 @@
   {% include 'ie7' %}
   {% include 'header' %}
 
-  <div class="hero">
-    <div class="container">
-      {% block hero %}
+  {% block hero %}
+    <div class="hero">
+      <div class="container">
         <h1><span>&mdash;</span> Real Life Church <span>&mdash;</span></h1>
         <h2>Learn more about our community</h2>
-      {% endblock %}
+      </div>
     </div>
-  </div>
+  {% endblock %}
 
   <div id="content">
     <div class="container">
@@ -44,7 +44,10 @@
     </div> <!-- /.container -->
   </div> <!-- /#content -->
 
-  {% include 'announcements' %}
+  {% block page_footer %}
+    {% include 'announcements' %}
+  {% endblock %}
+
   {% include 'footer' %}
   {% include 'foot' %}
 </body>

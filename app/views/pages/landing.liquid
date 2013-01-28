@@ -1,40 +1,40 @@
 {% extends 'parent' %}
 
 {% block page_class %}inner{% endblock %}
+
 {% block page_header %}{% endblock %}
+
 {% block hero %}{% endblock %}
 
 {% block section_global %}
-  <section role="global">
-    <article>
-      <header>
-        <h1>{{page.title}}</h1>
-      </header>
+  <article>
+    <header>
+      <h1>{{page.title}}</h1>
+    </header>
 
-      <div class="feature">
-        <img src="{% editable_file "banner", hint: "Upload a banner (perfect size: 580px by 300px)", priority: 1 %}//placehold.it/580x300{% endeditable_file %}" />
-      </div>
+    <div class="feature">
+      <img src="{% editable_file "banner", hint: "Upload a banner (perfect size: 580px by 300px)", priority: 1 %}//placehold.it/580x300{% endeditable_file %}" />
+    </div>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <blockquote>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </blockquote>
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </blockquote>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </article>
-  </section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </article>
 {% endblock %}
 
 {% block aside_global %}
@@ -45,10 +45,7 @@
       </header>
       {% nav page, id: '' %}
     </nav>
-
-    <article class="signup">
-      <h1><a href="/about/start-your-free-trial">Try Goodberry for Free</a></h1>
-      <p>30 Day Money Back Guarantee!</p>
-    </article>
   </aside>
 {% endblock %}
+
+{% block page_footer %}{% endblock %}
