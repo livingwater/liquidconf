@@ -44,6 +44,10 @@ fields:
     type: text
     text_formatting: html
     hint: The body of the event
+- photo:
+    label: Photo
+    type: file
+    hint: Photo to be used to when displaying the event details page (960x300)
 - summary:
     label: Summary
     type: text
