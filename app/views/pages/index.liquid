@@ -15,8 +15,13 @@
   {% block hero %}
     <div class="hero">
       <div class="container">
-        <h1><span>&mdash;</span> Real Life Church <span>&mdash;</span></h1>
-        <h2>Learn more about our community</h2>
+        {% editable_short_text "Hero Statement", hint: "The hero statement", priority: 10 %}
+          <h1><span>&mdash;</span> Real Life Church <span>&mdash;</span></h1>
+        {% endeditable_short_text %}
+
+        {% editable_short_text "Hero Tagline", hint: "The hero tagline", priority: 10 %}
+          <h2>Learn more about our community</h2>
+        {% endeditable_short_text %}
       </div>
     </div>
   {% endblock %}
@@ -25,19 +30,33 @@
     <div class="container">
       <section role="global">
         {% block section_global %}
-          <p class="introduction">We’re a small, close-knit community of believers. We’re drawn together by a common love for Christ, our pursuit to live like Him, and a desire to support and challenge one-another in our faith journey.<p>
+          <div class="introduction">
+            {% editable_long_text "introduction", hint: "Introductry paragraph", priority: 1 %}
+              <p>We’re a small, close-knit community of believers. We’re drawn together by a common love for Christ, our pursuit to live like Him, and a desire to support and challenge one-another in our faith journey.</p>
+            {% endeditable_long_text %}
+          </div>
 
-          <h3>We love you.</h3>
+          <div class="welcome">
+            {% editable_long_text "welcome", hint: "Welcoming paragraph", priority: 1 %}
+              <h3>We love you.</h3>
 
-          <p class="welcome">We love loving people – and it shows.You should come by and find out what’s happening at Living Water. Maybe you’ll love us too!</p>
+              <p>We love loving people – and it shows.You should come by and find out what’s happening at Living Water. Maybe you’ll love us too!</p>
+            {% endeditable_long_text %}
+          </div>
         {% endblock %}
       </section>
 
       {% block aside_global %}
         <aside role="global">
-          <iframe src="http://www.youtube.com/embed/DmvlwrdK7qw" frameborder="0" allowfullscreen></iframe>
+
+          {% editable_short_text "feature_video", hint: "Feature Video", priority: 10 %}
+            <iframe src="http://www.youtube.com/embed/DmvlwrdK7qw" frameborder="0" allowfullscreen></iframe>
+          {% endeditable_short_text %}
+
           <h4>Watch:</h4>
-          <p>Welcome to Living Water CRC (2:23)</p>
+          {% editable_short_text "feature_video_description", hint: "Feature Video Description", priority: 10 %}
+            <p>Welcome to Living Water CRC (2:23)</p>
+          {% endeditable_short_text %}
         </aside>
       {% endblock %}
 
