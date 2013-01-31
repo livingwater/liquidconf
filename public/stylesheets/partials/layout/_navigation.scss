@@ -31,3 +31,11 @@ header[role="global"] {
     }
   }
 }
+
+body#index-page {
+  #home-link {
+    a {
+      color: $color-link-highlight;
+    }
+  }
+}
