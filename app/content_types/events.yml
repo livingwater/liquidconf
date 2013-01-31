@@ -1,0 +1,50 @@
+name: Events
+description: Upcoming Events
+order_by: starts_at
+order_direction: asc
+slug: events
+label_field_name: name
+fields:
+- name:
+    label: Name
+    type: string
+    hint: Event Name
+    required: true
+- posted_at:
+    label: Posted at
+    type: date
+    hint: The date when the event has been or will be posted.
+- starts_at:
+    label: Starts at
+    type: date
+    hint: The date when the event has been or will be posted.
+- ends_at:
+    label: Ends at
+    type: date
+    hint: The date when the event has been or will be posted.
+- location_name:
+    label: Location Name
+    type: string
+    hint: Location Name
+- location_street_address:
+    label: Location Street Address
+    type: string
+    hint: 123 Street Dr SE
+- location_locality:
+    label: Location City
+    type: string
+- location_state:
+    label: Location State
+    type: string
+- location_postal_code:
+    label: Zip Code
+    type: string
+- body:
+    label: Body
+    type: text
+    text_formatting: html
+    hint: The body of the event
+- summary:
+    label: Summary
+    type: text
+    hint: Short text displayed on the home page.
