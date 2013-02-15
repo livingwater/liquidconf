@@ -3,9 +3,9 @@ site:
 
   locales: [en]
 
-  seo_title: "Bible Study &amp; Media Library for Churches : Goodberry.net"
-  meta_keywords: "Bible Study & Media Library for Churches : Goodberry.net"
-  meta_description: "Goodberry is a bible study, media (DVD, VHS, Audio, Kit) lending library for churches."
+  seo_title: "Liquid Conference"
+  meta_keywords: ""
+  meta_description: ""
 
   pages:
     - index: # page path (the template can edited here app/views/pages/index.liquid)
