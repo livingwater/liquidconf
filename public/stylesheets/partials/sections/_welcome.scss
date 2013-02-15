@@ -1,4 +1,99 @@
 section#story-welcome {
+  padding-top: 100px;
   color: #fff;
   background-color: rgb(49,49,64);
+
+  .location {
+    margin-bottom: 1em;
+    color: #000;
+    font: {
+      size: 24px;
+      weight: 900;
+    }
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+  }
+
+  .presents {
+    margin-bottom: 1.5em;
+    color: #666;
+    font: {
+      family: "Times New Roman";
+      size: 20px;
+      weight: 100;
+      style: italic;
+    }
+    text: {
+      align: center;
+    }
+  }
+
+  .positioning_statement {
+    line-height: 1;
+    margin-bottom: 100px;
+    color: #fff;
+    font: {
+      family: Lato;
+      size: 70px;
+      weight: 900;
+    }
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+    letter-spacing: 0;
+  }
+
+  .call_to_action {
+    width: columns(15, 16);
+    margin: 0 auto;
+    text-align: center;
+    @extend #clearfix;
+
+    .pricing {
+      padding: .5em 0;
+      border-top: 1px solid rgba(255,255,255,.5);
+      border-bottom: 1px solid rgba(255,255,255,.5);
+      @include span-columns(5, 15);
+      font: {
+        family: Lato;
+        size: 30px;
+        weight: 700;
+      }
+      text-transform: uppercase;
+    }
+
+    .register {
+      @include span-columns(5, 15);
+
+      a {
+        display: inline-block;
+        padding: .5em 1em;
+        color: #fff;
+        font: {
+          family: Lato;
+          size: 30px;
+          weight: 700;
+        }
+        vertical-align: middle;
+        text-transform: uppercase;
+        background-color: $color-accent-1;
+      }
+    }
+
+    .dates {
+      padding: .75em 0;
+      border-top: 1px solid rgba(255,255,255,.5);
+      border-bottom: 1px solid rgba(255,255,255,.5);
+      @include span-columns(5 omega, 15);
+      font: {
+        family: Lato;
+        size: 24px;
+        weight: 700;
+      }
+      text-transform: uppercase;
+    }
+  }
 }

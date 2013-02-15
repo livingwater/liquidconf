@@ -1,4 +1,22 @@
 #story-schedule {
   color: #fff;
   background-color: rgb(215,68,38);
+
+  .schedule {
+    margin: 2em 0;
+    padding: 1em 0;
+    border-top: 1px solid rgba(255,255,255,.6);
+    border-bottom: 1px solid rgba(255,255,255,.6);
+
+    font: {
+      size: 40px;
+      family: Lato;
+      weight: 900;
+    }
+    letter-spacing: 1px;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+  }
 }

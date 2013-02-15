@@ -4,10 +4,22 @@
 @import "partials/sections/schedule";
 @import "partials/sections/about";
 
-#content {
-  section {
-    .story {
-      padding-top: 90px;
+section {
+  .story {
+    padding-top: 90px;
+
+    h2 {
+      color: #fff;
+      font: {
+        size: 50px;
+        family: Lato;
+        weight: 900;
+      }
+      letter-spacing: 1px;
+      text: {
+        align: center;
+        transform: uppercase;
+      }
     }
   }
 }

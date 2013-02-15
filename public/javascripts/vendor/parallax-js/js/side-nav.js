@@ -12,7 +12,7 @@ $(function(){
 		$nav.append( '<li class="' + sId + '"><h1><span>' + sTitle + '</span></h1><a href="#' + sId + '">' + sId + '</a></li>' )
 	} );
 
-	$( '<style>' + aRules.join( ', ' ) + '{ background : url( /javascripts/vendor/parallax-js/images/grey-pink-dot.png ) 0 100% no-repeat; }</style>' ).appendTo( $( 'head' ) );
+	$( '<style>' + aRules.join( ', ' ) + '{ background-color: pink ) 0 100% no-repeat; }</style>' ).appendTo( $( 'head' ) );
 
 	$nav
 		.on( 'click', 'a', function(){
