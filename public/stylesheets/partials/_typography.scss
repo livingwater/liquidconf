@@ -1,11 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Enriqueta:400,700|Open+Sans:100,200,300,400,500,600,700,800,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Enriqueta:400,700|Lato:100,300,400,400italic,700,900|Open+Sans:100,200,300,400,500,600,700,800,900);
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: $base-font-size;
   font-weight: 300;
   line-height: 1.5;
-  color: $color-default;
+  color: #333;
 }
 
 a,

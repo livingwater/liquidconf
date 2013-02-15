@@ -1,24 +1,9 @@
 footer[role="global"] {
   clear: both;
-  padding-bottom: 3em;
-
-  .vcard {
-    margin-bottom: .5em;
-
-    .adr {
-      font-size: 14px;
-
-      .tel {
-        margin-right: 1em;
-      }
-
-      abbr {
-        font-weight: 600;
-      }
-    }
-  }
+  padding: 3em;
 
  .copyright {
-    font-size: 11px;
+    text-align: center;
+    font-size: 12px;
   }
 }

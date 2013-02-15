@@ -1,6 +1,6 @@
 name: Events
 description: Upcoming Events
-order_by: starts_at
+order_by: start_date
 order_direction: asc
 slug: events
 label_field_name: name
@@ -10,18 +10,26 @@ fields:
     type: string
     hint: Event Name
     required: true
-- posted_at:
-    label: Posted at
+- published_at:
+    label: Published at
     type: date
-    hint: The date when the event has been or will be posted.
-- starts_at:
-    label: Starts at
+    hint: The date when the event has been or will be published.
+- start_date:
+    label: Start Date
     type: date
-    hint: The date when the event has been or will be posted.
-- ends_at:
-    label: Ends at
+    hint: The date when the event will begin.
+- start_time:
+    label: Start Time
+    type: string
+    hint: The start time of the event e.g. 11:00AM
+- end_date:
+    label: End Date
     type: date
-    hint: The date when the event has been or will be posted.
+    hint: The date when the event will end.
+- end_time:
+    label: End Time
+    type: string
+    hint: The end time of the event e.g. 12:15PM
 - location_name:
     label: Location Name
     type: string

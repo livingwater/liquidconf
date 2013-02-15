@@ -1,6 +1,11 @@
 header[role="global"] {
   nav {
     @include float-right;
+    display: none;
+
+    @include at-breakpoint($desktop) {
+      display: inline;
+    }
 
     ul {
       margin: 0;
@@ -16,8 +21,11 @@ header[role="global"] {
         a {
           display: block;
           color: $color-link;
-          font-size: pem(12px);
-          font-weight: 600;
+          font: {
+            family: "Open Sans", sans-serif;
+            size: pem(12px);
+            weight: 600;
+          }
           text-transform: uppercase;
           letter-spacing: 1px
         }
@@ -30,12 +38,13 @@ header[role="global"] {
       }
     }
   }
-}
 
-body#index-page {
-  #home-link {
-    a {
-      color: $color-link-highlight;
-    }
+  .register {
+    @include float-right;
+    margin-top: 1.5em;
+    padding: 0.5em 1em;
+    line-height: 1.5;
+    color: #fff;
+    background-color: $color-accent-1;
   }
 }

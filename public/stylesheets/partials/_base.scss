@@ -13,9 +13,9 @@ $column-width: pem(40px);
 $gutter-width: pem(20px);
 $grid-padding: pem(10px);
 
-$total-columns: 4;
-$tablet: 8;
-$desktop: 60em 16;
+$total-columns: 6;
+$tablet: 12;
+$desktop: 16;
 
 @include border-box-sizing;
 

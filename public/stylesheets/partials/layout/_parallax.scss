@@ -1,0 +1,143 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+  @include at-breakpoint($desktop) {
+    min-width: 1080px;
+  }
+}
+
+#content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  overflow: hidden;
+}
+
+section {
+  position: absolute;
+  // min-height: 500px;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+
+  .story {
+    position: relative;
+    z-index: 1;
+    // width: 500px;
+    // margin: 20px auto 0 auto;
+    // padding-right: 450px;
+    // padding-top: 90px;
+  }
+
+  &.start {
+    top: 100%;
+  }
+  &.focus, &.to {
+    bottom: 0%;
+  }
+  &.end {
+    bottom: 100%;
+  }
+
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0%;
+
+    &.start {
+      top: -50%;
+    }
+
+    &.end {
+      top: 50%;
+    }
+  }
+}
+
+div.caption {
+  padding-bottom: 30px;
+  font-size: 13px;
+}
+
+/* Side Nav */
+ul#nav {
+  display: none;
+  position : fixed;
+  left     : 5%;
+  top      : 20%;
+  z-index  : 999;
+
+  @include at-breakpoint($desktop) {
+    display: block;
+  }
+
+  li {
+    height   : 20px;
+    position : relative;
+  }
+
+  a {
+    display     : block;
+    width       : 20px;
+    height      : 20px;
+    background  : url('/javascripts/vendor/parallax-js/images/grey-dot.png') 0 100% no-repeat;
+    text-indent : -9000px;
+    overflow    : hidden;
+    outline     : none;
+  }
+
+  a:hover, li.active a {
+    background : url('/javascripts/vendor/parallax-js/images/grey-pink-dot.png') 0 100% no-repeat;
+  }
+
+  h1 {
+    display     : none;
+    opacity     : 0;
+    position    : absolute;
+    left        : 15px;
+    top         : 0px;
+    white-space : nowrap;
+    padding     : 0 0 0 18px;
+    background  : url('/javascripts/vendor/parallax-js/images/menu-arrow.png') 0 50% no-repeat;
+    overflow    : hidden;
+    margin      : 0;
+    font-size   : 16px;
+  }
+
+  span {
+    display            : block;
+    background         : url('/javascripts/vendor/parallax-js/images/menu-bg.png') repeat-x;
+    color              : #FFF;
+    padding            : 4px 8px;
+    white-space        : nowrap;
+    -moz-border-radius : 10px;
+    border-radius      : 10px;
+  }
+}
+
+
+#fancybox-left #fancybox-left-ico {
+  left : -40px;
+}
+
+#fancybox-right #fancybox-right-ico {
+  left  : auto;
+  right : -40px;
+}
+
+.video-js-box.vjs-fullscreen {
+  height : auto !important;
+}

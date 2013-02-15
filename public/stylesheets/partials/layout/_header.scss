@@ -1,31 +1,56 @@
 header[role="global"] {
   position: fixed;
   top: 0;
+  height: 90px;
+  line-height: 1.5;
   width: 100%;
   z-index: 100;
-  height: 90px;
-  line-height: 90px;
+
   @include background(
-    linear-gradient(top left, rgba(255,255,255,0.85), rgba(255,255,255,0.95))
+    linear-gradient(top center, rgba(255,255,255,0.85), rgba(255,255,255,0.95))
   );
 
+  @include at-breakpoint($desktop) {
+    line-height: 90px;
+  }
+
   h1 {
-    @include float-left;
-    width: 191px;
-    // height: 90px;
-    // line-height: 90px;
     margin: 0;
+    padding: .5em 0 0;
+    text-align: center;
+
+    @include at-breakpoint($desktop) {
+      @include float-left;
+      padding: 0;
+      text-align: left;
+    }
 
     a {
       display: block;
-      width: 191px;
-      // height: 90px;
-      // line-height: 90px;
-      background-image: url(/images/logo.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-      text-indent: -1000em;
-      overflow: hidden;
+      font-weight: 300;
+      font-family: Lato;
+      text-transform: uppercase;
+      color: $color-default;
+      font-size: 14px;
+      line-height: 1;
+
+      @include at-breakpoint($desktop) {
+        font-size: 28px;
+        font-weight: 100;
+        line-height: inherit;
+      }
+
+      span {
+        display: block;
+        font-weight: 900;
+        color: #333;
+        font-size: 3em;
+
+        @include at-breakpoint($desktop) {
+          display: inline;
+          font-size: 1em;
+        }
+      }
     }
   }
 }

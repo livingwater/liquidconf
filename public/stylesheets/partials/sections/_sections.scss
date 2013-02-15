@@ -1,0 +1,13 @@
+@import "partials/sections/welcome";
+@import "partials/sections/speakers";
+@import "partials/sections/venue";
+@import "partials/sections/schedule";
+@import "partials/sections/about";
+
+#content {
+  section {
+    .story {
+      padding-top: 90px;
+    }
+  }
+}

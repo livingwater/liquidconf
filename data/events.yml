@@ -1,20 +1,14 @@
-- ! 'Item #1':
-    _permalink: item-1
-    :description: Et aspernatur reiciendis aperiam minima vel. Iure rerum accusamus
-      ex temporibus dignissimos unde voluptate. Ut laudantium perferendis aut laboriosam
-      distinctio. Quia facilis sequi unde sint. Unde similique qui fugiat hic optio.
-- ! 'Item #2':
-    _permalink: item-2
-    :description: Rerum quas totam odit ea fugit et excepturi. Quae voluptatem perspiciatis
-      optio. Blanditiis optio facere fugiat qui in sunt laborum. Eum maiores possimus
-      optio nisi velit nostrum.
-- ! 'Item #3':
-    _permalink: item-3
-    :description: Maiores alias consequuntur placeat natus et incidunt amet. Alias
-      enim exercitationem dolores dicta. Non quibusdam excepturi sequi tempore harum.
-      Esse similique cumque quod autem sequi est.
-- ! 'Item #4':
-    _permalink: item-4
-    :description: Est commodi aperiam velit voluptas id optio quia autem. Itaque rerum
-      tenetur et. Molestiae et commodi sequi totam. Et optio enim et libero et est
-      dolorem.
+- ! 'Off-site Vision Retreat 2013':
+    _permalink: off-site-vision-retreat-2013
+    :publish_date: "2013-01-30"
+    :start_date: "2013-02-01"
+    :start_time: "7:00PM"
+    :end_date: "2013-02-02"
+    :end_time: "4:30PM"
+    :location_name: "Woodlawn CRC Ministry Center"
+    :location_street_address: "3190 Burton St SE"
+    :location_locality: "Grand Rapids"
+    :location_state: "MI"
+    :location_postal_code: "49546"
+    :body: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis nunc eget urna bibendum ullamcorper. Aliquam a libero neque. Phasellus ipsum est, pulvinar eget ultricies quis, luctus a lectus. Morbi aliquet egestas metus sit amet rutrum. Quisque tincidunt rutrum fringilla. Duis in purus id urna suscipit ultricies scelerisque pretium turpis. Fusce dapibus ornare libero in dictum. Proin arcu erat, volutpat ut pellentesque a, placerat vel mauris. Nullam metus odio, volutpat in porta non, auctor quis diam. Donec elementum nibh ut turpis iaculis vel cursus odio malesuada. Aenean a risus at arcu posuere aliquet non nec dolor. Donec consequat nisl at urna volutpat semper.</p><p>In quis lectus ac leo accumsan tempor. Sed lobortis, sapien id feugiat cursus, tortor nunc congue libero, et posuere urna sem non tellus. Ut viverra nulla id diam sollicitudin bibendum. Curabitur ante magna, rutrum in tempor et, fringilla eu odio. Sed ut risus neque, eu pretium urna. Ut molestie sapien vel lorem vulputate sollicitudin. Donec quis eros vel erat tincidunt porta sed ac odio. Ut tincidunt consectetur commodo. In aliquam nisl sit amet est rutrum tincidunt.</p>
+    :summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis nunc eget urna bibendum ullamcorper. Aliquam a libero neque. Phasellus ipsum est, pulvinar eget ultricies quis, luctus a lectus.
