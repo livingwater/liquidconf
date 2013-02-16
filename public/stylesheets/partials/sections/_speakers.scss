@@ -4,10 +4,8 @@
   background-color: rgb(22,175,124);
   background-color: rgb(69,45,65);
 
-
   .speakers {
     margin: 0 auto;
-    padding-top: 3em;
     text-align: center;
     @extend #clearfix;
 
@@ -25,6 +23,15 @@
         margin: 0 auto 2em;
         @include border-radius(80px);
         overflow: hidden;
+        @include filter(
+          grayscale(1)
+        );
+
+        &:hover {
+          @include filter(
+            grayscale(0)
+          );
+        }
 
         img {
           width: 100%;

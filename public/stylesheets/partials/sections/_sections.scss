@@ -2,23 +2,44 @@
 @import "partials/sections/speakers";
 @import "partials/sections/venue";
 @import "partials/sections/schedule";
+@import "partials/sections/your";
 @import "partials/sections/about";
 
 section {
   .story {
     padding-top: 90px;
 
-    h2 {
-      color: #fff;
-      font: {
-        size: 50px;
-        family: Lato;
-        weight: 900;
+    header {
+      position: relative;
+      z-index: 100;
+      margin-bottom: 3em;
+
+      h2 {
+        margin-bottom: 0;
+        color: rgba(255,255,255,0.85);
+        font: {
+          size: 50px;
+          family: Lato;
+          weight: 900;
+        }
+        letter-spacing: 1px;
+        text: {
+          align: center;
+          transform: uppercase;
+        }
       }
-      letter-spacing: 1px;
-      text: {
-        align: center;
-        transform: uppercase;
+
+      h3 {
+        margin: 0;
+        color: rgba(255,255,255,0.85);
+        font: {
+          size: 18px;
+          family: Enriqueta;
+          weight: 400;
+        }
+        text: {
+          align: center;
+        }
       }
     }
   }

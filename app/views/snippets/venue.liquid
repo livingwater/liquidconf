@@ -3,14 +3,15 @@
 
   <div class="story">
     <div class="container">
-      <h2>Venue</h2>
+      <header>
+        <h2>Venue</h2>
+        <h3>Camp Geneva In Holland, Michgan</h3>
+      </header>
     </div>
 
     <div class="content">
       <div class="container">
         {% editable_long_text "venue_description", hint: "Venue Description", priority: 1 %}
-          <h3>Camp Geneva In Holland, Michgan</h3>
-
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -29,5 +30,7 @@
         {% endeditable_long_text %}
       </div>
     </div>
+
+    <img src="{{ "venue/celebration-center.jpg" | theme_image_url }}" class="celebration_center animate" anim-detached="true" />
   </div>
 </section>

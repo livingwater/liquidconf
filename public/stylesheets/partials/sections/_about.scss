@@ -1,4 +1,22 @@
 #story-about {
-  color: #fff;
+  color: #000;
   background-color: rgb(49,49,64);
+
+  .content {
+    position: relative;
+    z-index: 100;
+    margin-right: columns(4,16);
+    padding: 1em 2em;
+    background-color: rgba(255,255,255,0.7);
+
+    .container {
+      @include container(12);
+      margin-left: auto;
+      margin-right: 0 !important;
+    }
+
+    h3 {
+      text-transform: uppercase;
+    }
+  }
 }

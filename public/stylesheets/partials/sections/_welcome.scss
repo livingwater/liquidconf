@@ -5,7 +5,7 @@ section#story-welcome {
 
   .location {
     margin-bottom: 1em;
-    color: #000;
+    color: rgba(0,0,0,0.5);
     font: {
       size: 24px;
       weight: 900;
@@ -17,8 +17,8 @@ section#story-welcome {
   }
 
   .presents {
-    margin-bottom: 1.5em;
-    color: #666;
+    margin-bottom: 2em;
+    color: rgba(0,0,0,.3);
     font: {
       family: "Times New Roman";
       size: 20px;
@@ -33,7 +33,7 @@ section#story-welcome {
   .positioning_statement {
     line-height: 1;
     margin-bottom: 100px;
-    color: #fff;
+    color: rgba(255,255,255,0.8);
     font: {
       family: Lato;
       size: 70px;
@@ -80,6 +80,7 @@ section#story-welcome {
         vertical-align: middle;
         text-transform: uppercase;
         background-color: $color-accent-1;
+        background-color: rgba(0,0,0,.6);
       }
     }
 
