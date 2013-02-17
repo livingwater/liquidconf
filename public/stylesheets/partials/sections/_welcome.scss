@@ -1,5 +1,8 @@
 section#story-welcome {
-  padding-top: 100px;
+  padding-top: 20px;
+  @include at-breakpoint($tablet) {
+    padding-top: 100px;
+  }
   color: #fff;
   background-color: rgb(49,49,64);
 
@@ -32,11 +35,14 @@ section#story-welcome {
 
   .positioning_statement {
     line-height: 1;
-    margin-bottom: 100px;
+    margin-bottom: 1em;
+    @include at-breakpoint($tablet) {
+      margin-bottom: 100px;
+    }
     color: rgba(255,255,255,0.8);
     font: {
       family: Lato;
-      size: 70px;
+      size: 40px;
       weight: 900;
     }
     text: {
@@ -44,32 +50,47 @@ section#story-welcome {
       transform: uppercase;
     }
     letter-spacing: 0;
+
+    @include at-breakpoint($tablet) {
+      font-size: 60px;
+    }
+
+    @include at-breakpoint($desktop) {
+      font-size: 70px;
+    }
   }
 
   .call_to_action {
-    width: columns(15, 16);
+    @include at-breakpoint($tablet) {
+      width: columns(15, 16);
+    }
+
     margin: 0 auto;
     text-align: center;
     @extend #clearfix;
 
     .pricing {
+      margin-bottom: 0.25em;
       padding: .5em 0;
       border-top: 1px solid rgba(255,255,255,.5);
-      border-bottom: 1px solid rgba(255,255,255,.5);
-      @include span-columns(5, 15);
       font: {
         family: Lato;
         size: 30px;
         weight: 700;
       }
       text-transform: uppercase;
+
+      @include at-breakpoint($tablet) {
+        @include span-columns(5, 15);
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+      }
     }
 
     .register {
-      @include span-columns(5, 15);
-
+      margin-bottom: 0.5em;
       a {
-        display: inline-block;
+        display: block;
         padding: .5em 1em;
         color: #fff;
         font: {
@@ -82,19 +103,38 @@ section#story-welcome {
         background-color: $color-accent-1;
         background-color: rgba(0,0,0,.6);
       }
+
+      @include at-breakpoint($tablet) {
+        display: inline-block;
+        @include span-columns(5, 15);
+        margin-bottom: 0;
+      }
     }
 
     .dates {
+      margin-bottom: 0.25em;
       padding: .75em 0;
-      border-top: 1px solid rgba(255,255,255,.5);
       border-bottom: 1px solid rgba(255,255,255,.5);
-      @include span-columns(5 omega, 15);
       font: {
         family: Lato;
         size: 24px;
         weight: 700;
       }
       text-transform: uppercase;
+
+      @include at-breakpoint($tablet) {
+        @include span-columns(5 omega, 15);
+        margin-bottom: 0;
+        border-top: 1px solid rgba(255,255,255,.5);
+      }
+
+      span {
+        display: none;
+
+        @include at-breakpoint($desktop) {
+          display: inline;
+        }
+      }
     }
   }
 }

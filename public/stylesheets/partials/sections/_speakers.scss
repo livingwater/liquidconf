@@ -1,7 +1,7 @@
 #story-speakers {
   color: #fff;
   // background-color: rgb(49,49,64);
-  background-color: rgb(22,175,124);
+  // background-color: rgb(22,175,124);
   background-color: rgb(69,45,65);
 
   .speakers {
@@ -10,11 +10,14 @@
     @extend #clearfix;
 
     .speaker {
-      @include span-columns(4, 12);
       margin-bottom: 3em;
+      @include at-breakpoint($tablet) {
+        @include span-columns(4, 12);
 
-      &:nth-child(3n) {
-        @include omega;
+
+        &:nth-child(3n) {
+          @include omega;
+        }
       }
 
       .photo {

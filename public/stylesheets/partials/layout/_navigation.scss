@@ -1,12 +1,5 @@
 header[role="global"] {
   nav {
-    @include float-right;
-    display: none;
-
-    @include at-breakpoint($desktop) {
-      display: inline;
-    }
-
     ul {
       margin: 0;
       padding: 0;
@@ -14,7 +7,7 @@ header[role="global"] {
       @extend #clearfix;
 
       li {
-        @include float-left;
+        @include inline-block;
         margin-right: 1.5em;
         padding: 0;
 
@@ -36,6 +29,32 @@ header[role="global"] {
           }
         }
       }
+    }
+  }
+
+  nav[role="primary"] {
+    @include float-left;
+    text-align: right;
+    display: none;
+
+    @include at-breakpoint($tablet) {
+      display: inline;
+    }
+
+    @include at-breakpoint($desktop) {
+    }
+  }
+
+  nav[role="secondary"] {
+    @include float-right;
+    text-align: left;
+    display: none;
+
+    @include at-breakpoint($tablet) {
+      display: inline;
+    }
+
+    @include at-breakpoint($desktop) {
     }
   }
 
