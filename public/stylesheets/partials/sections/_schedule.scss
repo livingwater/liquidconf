@@ -6,13 +6,16 @@
     margin: 5em 0;
 
     article {
+      @include at-breakpoint($desktop) {
+        @include span-columns(5, $desktop);
+      }
       margin-bottom: 5em;
       border-top: 1px solid rgba(255,255,255,0.1);
       border-left: 1px solid rgba(255,255,255,0.1);
       border-bottom: 1px solid rgba(255,255,255,0.1);
 
       header {
-        @include float-left;
+        @include span-columns(6);
         margin-top: -10px;
         margin-left: 1em;
         padding: 0;
@@ -21,7 +24,8 @@
           padding: 0 2em;
         }
         @include at-breakpoint($desktop) {
-          margin-left: 60px;
+          width: auto;
+          margin-left: 20px;
         }
         background-color: rgb(215,68,38);
 
@@ -31,6 +35,10 @@
           text-align: left;
           text-transform: uppercase;
           letter-spacing: 3px;
+          @include at-breakpoint($desktop) {
+            text-align: center;
+            font-size: 14px;
+          }
         }
       }
 
@@ -45,30 +53,39 @@
         }
 
         @include at-breakpoint($desktop) {
-          padding-left: 60px;
-          min-height: 160px;
+          padding-left: 20px;
+          min-height: 80px;
         }
 
         border-top: 1px solid rgba(255,255,255,0.1);
         @extend #clearfix;
 
         .time {
-          @include span-columns(4, 16);
+          @include span-columns(4);
           margin-top: -12px;
           margin-left: 1em;
-          @include at-breakpoint($tablet) {
-            margin-left: 0;
-            padding-left: 2em;
-          }
           color: rgba(255,255,255,.5);
           font-size: 16px;
           letter-spacing: 2px;
           background-color: rgb(215,68,38);
+
+          @include at-breakpoint($tablet) {
+            @include span-columns(4, $tablet);
+            margin-left: 0;
+            padding-left: 2em;
+          }
+
+          @include at-breakpoint($desktop) {
+            @include span-columns(2, 4);
+            margin-top: -8px;
+            font-size: 12px;
+          }
+
         }
 
         img {
           clear: left;
-          margin-left: 2em;
+          // margin-left: 2em;
           @include border-radius(50px);
           @include filter(
             grayscale(1)
@@ -76,7 +93,7 @@
           display: none;
 
           @include at-breakpoint($desktop) {
-            @include span-columns(2, $desktop);
+            @include span-columns(1 alpha,6);
             display: inline;
           }
 
@@ -99,9 +116,9 @@
 
           @include at-breakpoint($desktop) {
             clear: none;
-            @include span-columns(12, $desktop);
-            margin: 0 0 0 60px;
-            font-size: 32px;
+            @include span-columns(5 omega, 6);
+            margin: 0 0 .5em 0;
+            font-size: 16px;
 
           }
 
@@ -114,34 +131,38 @@
         h6 {
           line-height: 1.4;
           margin: 0 0 0 14px;
-          @include at-breakpoint($tablet) {
-            margin-left: 30px;
-            @include span-columns(12, $tablet);
-          }
-
-          @include at-breakpoint($desktop) {
-            margin-left: 60px;
-            @include span-columns(12, $desktop);
-          }
           color: rgba(255,255,255,.8);
           font-size: 16px;
           font-weight: 300;
           letter-spacing: 1px;
-        }
 
-        p {
-          margin: 1em 0 0 14px;
           @include at-breakpoint($tablet) {
             margin-left: 30px;
             @include span-columns(12, $tablet);
           }
 
           @include at-breakpoint($desktop) {
-            margin-left: 60px;
-            @include span-columns(12, $desktop);
+            @include span-columns(5 omega, 6);
+            font-size: 12px;
+            margin: 0;
           }
+        }
+
+        p {
+          margin: 1em 0 0 14px;
           color: rgba(255,255,255,.5);
           font-style: italic;
+
+          @include at-breakpoint($tablet) {
+            margin-left: 30px;
+            @include span-columns(12, $tablet);
+          }
+
+          @include at-breakpoint($desktop) {
+            @include span-columns(5 omega, 6);
+            margin: 0;
+          }
+
         }
       }
     }
