@@ -8,7 +8,6 @@ header[role="global"] {
 
       li {
         @include inline-block;
-        margin-right: 1.5em;
         padding: 0;
 
         a {
@@ -38,10 +37,17 @@ header[role="global"] {
     display: none;
 
     @include at-breakpoint($tablet) {
-      display: inline;
+      // width: columns(4,$tablet);
+      // display: none;
     }
 
     @include at-breakpoint($desktop) {
+      width: columns(5,$desktop);
+      display: inline;
+    }
+
+    li {
+      margin-left: 1.5em;
     }
   }
 
@@ -51,10 +57,17 @@ header[role="global"] {
     display: none;
 
     @include at-breakpoint($tablet) {
-      display: inline;
+      // display: none;
+      // width: columns(4,$tablet);
     }
 
     @include at-breakpoint($desktop) {
+      width: columns(5,$desktop);
+      display: inline;
+    }
+
+    li {
+      margin-right: 1.5em;
     }
   }
 

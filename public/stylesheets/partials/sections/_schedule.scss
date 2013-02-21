@@ -3,20 +3,90 @@
   background-color: rgb(215,68,38);
 
   .schedule {
-    margin: 2em 0;
-    padding: 1em 0;
-    border-top: 1px solid rgba(255,255,255,.6);
-    border-bottom: 1px solid rgba(255,255,255,.6);
+    margin: 5em 0;
 
-    font: {
-      size: 40px;
-      family: Lato;
-      weight: 900;
-    }
-    letter-spacing: 1px;
-    text: {
-      align: center;
-      transform: uppercase;
+    article {
+      margin-bottom: 5em;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      border-left: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+
+      header {
+        @include float-left;
+        margin-top: -10px;
+        margin-left: 60px;
+        padding: 0 2em;
+        background-color: rgb(215,68,38);
+
+        h3 {
+          font-family: Lato;
+          font-size: 18px;
+          text-align: left;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+      }
+
+      .section {
+        clear: both;
+        min-height: 160px;
+        margin-bottom: 2em;
+        padding-left: 60px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        @extend #clearfix;
+
+        .time {
+          @include span-columns(4, 16);
+          margin-top: -12px;
+          padding-left: 2em;
+          color: rgba(255,255,255,.5);
+          font-size: 16px;
+          letter-spacing: 2px;
+          background-color: rgb(215,68,38);
+        }
+
+        img {
+          clear: left;
+          @include span-columns(2, 16);
+          margin-left: 2em;
+          @include border-radius(50px);
+          @include filter(
+            grayscale(1)
+          );
+
+          &:hover {
+            @include filter(
+              grayscale(0)
+            );
+          }
+        }
+
+        h4 {
+          @include span-columns(12, 16);
+          line-height: 1;
+          margin: 0 0 0 60px;
+          color: rgba(255,255,255,.8);
+          font-size: 32px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+
+        h6 {
+          @include span-columns(12, 16);
+          margin: 0 0 0 60px;
+          color: rgba(255,255,255,.8);
+          font-size: 16px;
+          font-weight: 300;
+          letter-spacing: 1px;
+        }
+
+        p {
+          @include span-columns(12, 16);
+          margin: 0 0 0 60px;
+          color: rgba(255,255,255,.5);
+          font-style: italic;
+        }
+      }
     }
   }
 }
