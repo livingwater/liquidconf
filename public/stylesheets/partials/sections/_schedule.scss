@@ -14,8 +14,15 @@
       header {
         @include float-left;
         margin-top: -10px;
-        margin-left: 60px;
-        padding: 0 2em;
+        margin-left: 1em;
+        padding: 0;
+        @include at-breakpoint($tablet) {
+          margin-left: 40px;
+          padding: 0 2em;
+        }
+        @include at-breakpoint($desktop) {
+          margin-left: 60px;
+        }
         background-color: rgb(215,68,38);
 
         h3 {
@@ -29,16 +36,29 @@
 
       .section {
         clear: both;
-        min-height: 160px;
+        min-height: 80px;
         margin-bottom: 2em;
-        padding-left: 60px;
+        @include at-breakpoint($tablet) {
+          padding-left: 40px;
+          min-height: 100px;
+        }
+
+        @include at-breakpoint($desktop) {
+          padding-left: 60px;
+          min-height: 160px;
+        }
+
         border-top: 1px solid rgba(255,255,255,0.1);
         @extend #clearfix;
 
         .time {
           @include span-columns(4, 16);
           margin-top: -12px;
-          padding-left: 2em;
+          margin-left: 1em;
+          @include at-breakpoint($tablet) {
+            margin-left: 0;
+            padding-left: 2em;
+          }
           color: rgba(255,255,255,.5);
           font-size: 16px;
           letter-spacing: 2px;
@@ -47,12 +67,17 @@
 
         img {
           clear: left;
-          @include span-columns(2, 16);
           margin-left: 2em;
           @include border-radius(50px);
           @include filter(
             grayscale(1)
           );
+          display: none;
+
+          @include at-breakpoint($desktop) {
+            @include span-columns(2, $desktop);
+            display: inline;
+          }
 
           &:hover {
             @include filter(
@@ -62,18 +87,40 @@
         }
 
         h4 {
-          @include span-columns(12, 16);
-          line-height: 1;
-          margin: 0 0 0 60px;
+          clear: left;
+          line-height: 1.2;
+          margin: 0 0 0 14px;
+          font-size: 24px;
+          @include at-breakpoint($tablet) {
+            margin: 0 0 0 30px;
+            @include span-columns(12, $tablet);
+          }
+
+          @include at-breakpoint($desktop) {
+            clear: none;
+            @include span-columns(12, $desktop);
+            margin: 0 0 0 60px;
+            font-size: 32px;
+
+          }
+
           color: rgba(255,255,255,.8);
-          font-size: 32px;
+
           text-transform: uppercase;
           letter-spacing: 2px;
         }
 
         h6 {
-          @include span-columns(12, 16);
-          margin: 0 0 0 60px;
+          margin: 0 0 0 14px;
+          @include at-breakpoint($tablet) {
+            margin: 0 0 0 30px;
+            @include span-columns(12, $tablet);
+          }
+
+          @include at-breakpoint($desktop) {
+            margin: 0 0 0 60px;
+            @include span-columns(12, $desktop);
+          }
           color: rgba(255,255,255,.8);
           font-size: 16px;
           font-weight: 300;
@@ -81,8 +128,16 @@
         }
 
         p {
-          @include span-columns(12, 16);
-          margin: 0 0 0 60px;
+          margin: 0 0 0 14px;
+          @include at-breakpoint($tablet) {
+            margin: 0 0 0 30px;
+            @include span-columns(12, $tablet);
+          }
+
+          @include at-breakpoint($desktop) {
+            margin: 0 0 0 60px;
+            @include span-columns(12, $desktop);
+          }
           color: rgba(255,255,255,.5);
           font-style: italic;
         }
