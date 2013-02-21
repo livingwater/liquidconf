@@ -38,6 +38,7 @@
         clear: both;
         min-height: 80px;
         margin-bottom: 2em;
+        padding-bottom: 2em;
         @include at-breakpoint($tablet) {
           padding-left: 40px;
           min-height: 100px;
@@ -111,14 +112,15 @@
         }
 
         h6 {
+          line-height: 1.4;
           margin: 0 0 0 14px;
           @include at-breakpoint($tablet) {
-            margin: 0 0 0 30px;
+            margin-left: 30px;
             @include span-columns(12, $tablet);
           }
 
           @include at-breakpoint($desktop) {
-            margin: 0 0 0 60px;
+            margin-left: 60px;
             @include span-columns(12, $desktop);
           }
           color: rgba(255,255,255,.8);
@@ -128,14 +130,14 @@
         }
 
         p {
-          margin: 0 0 0 14px;
+          margin: 1em 0 0 14px;
           @include at-breakpoint($tablet) {
-            margin: 0 0 0 30px;
+            margin-left: 30px;
             @include span-columns(12, $tablet);
           }
 
           @include at-breakpoint($desktop) {
-            margin: 0 0 0 60px;
+            margin-left: 60px;
             @include span-columns(12, $desktop);
           }
           color: rgba(255,255,255,.5);
