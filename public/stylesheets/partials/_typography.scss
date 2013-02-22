@@ -16,9 +16,11 @@ a:visited {
   @include transition-duration(".2s, .2s");
 }
 
-a:hover {
-  color: lighten($color-default, 25);
-  text-decoration: underline;
+@include at-breakpoint($desktop) {
+  a:hover {
+    color: lighten($color-default, 25);
+    text-decoration: underline;
+  }
 }
 
 h1 {

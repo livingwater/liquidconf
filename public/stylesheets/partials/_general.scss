@@ -32,3 +32,40 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
+// Disable shadow effects in textfield inputs
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="week"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+}
+
+// Disable webkit tap-highlighting on non-links
+body {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  tap-highlight-color: rgba(0,0,0,0);
+}
+
+// Enable webkit tap-highlighting on links and inputs
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: #999;
+  tap-highlight-color: #999;
+}
+
+// Add this class to any links that are overridden by Javascript
+// In jQuery: $('a[href="#"]').addClass('no-touch-callout');
+.no-touch-callout {
+  -webkit-touch-callout: none;
+}

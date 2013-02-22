@@ -135,17 +135,19 @@ section#story-welcome {
         text-transform: uppercase;
         background-color: $color-accent-1;
         background-color: rgba(0,0,0,.6);
-
-        &:hover {
-          background-color: $color-accent-1;
-          text-decoration: none;
-        }
       }
 
       @include at-breakpoint($tablet) {
         display: inline-block;
         @include span-columns(5, 15);
         margin-bottom: 0;
+      }
+
+      @include at-breakpoint($desktop) {
+        a:hover {
+          background-color: $color-accent-1;
+          text-decoration: none;
+        }
       }
     }
 
